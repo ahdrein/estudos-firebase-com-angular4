@@ -1,0 +1,8 @@
+<app-titulo textTitulo="Texto enviado..."></app-titulo>
+<h2 [hidden]="!clicou">Trabalhando com Hidden</h2>
+<h2 *ngIf="clicou">Trabalhando com ngIf</h2>
+<button (click)="clicou = !clicou">Exibir elementos</button>
+
+<ul>
+  <li appDestaque *ngFor="let compra of compras">{{ compra.titulo }}</li>
+</ul>
